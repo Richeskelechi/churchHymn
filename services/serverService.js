@@ -1,8 +1,8 @@
 const { response } = require('../response/response');
 
 const serverService = {
-  getServerHealth: async () => {
-    return response(200, "Healthy Server", null, "Success");
+  getServerHealth: async (req) => {
+    return response(200, "Healthy Church Hymn Server", null, "Success", req.apiId);
   }
 };
 
